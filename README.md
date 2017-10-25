@@ -22,9 +22,13 @@ public static Boolean valueOf(boolean b){
 
 > 总结
 - 当一个类需要多个带有相同签名的构造器时，就用静态工厂方法代替构造器
-- Builder模式可以解决多参数问题，最好也是只在很多参数的情况下使用
 
 ### 第2条：遇到多个构造器参数时要考虑用构建器
+
+- Builder模式可以解决多参数问题，最好也是只在很多参数的情况下使用
+
+### 第3条：用私有构造器或者枚举类型强化Singleton属性
+> Singleton指仅被实例化一次的类
 
 ## 3.对于所有对象都通用的方法(Common methods for all objects)
 
