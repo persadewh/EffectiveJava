@@ -30,6 +30,24 @@ public static Boolean valueOf(boolean b){
 ### 第3条：用私有构造器或者枚举类型强化Singleton属性
 > Singleton指仅被实例化一次的类
 
+### 第4条：通过私有构造器强化不可实例化的能力
+> 工具类(utility class)
+
+### 第5条：避免创建不必要的对象
+> 能重用的对象就不要在每次需要的时候创建一个相同功能的新对象
+```
+String s = new String("stringette");//DON'T DO THIS
+```
+> 要优先使用基本类型而不是装箱基本类型，要当心无意识的自动装箱
+
+### 第6条：消除过期的对象引用
+
+### 第7条：避免使用终结方法
+```
+System.gc
+System.runFinalization
+```
+
 ## 3.对于所有对象都通用的方法(Common methods for all objects)
 
 ## 4.类和接口(Class and Interface)
